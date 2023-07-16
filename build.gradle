@@ -1,0 +1,76 @@
+plugins {
+    id "java"
+    id "io.qameta.allure" version "2.11.2"
+    id "io.freefair.lombok" version "6.5.1"
+}
+
+def allureVersion = "2.21.0",
+    assertJVersion = "3.24.2",
+    jacksonDatabindVersion = "2.15.2",
+    junitJupiterVersion = "5.9.2",
+    lombokVersion = "1.18.26",
+    ownerVersion = "1.0.12",
+    restAssuredVersion = "5.3.0",
+    slf4jVersion = "2.0.6",
+    selenideVersion = "6.12.4"
+
+group "guru.qa"
+version "1.0-SNAPSHOT"
+
+allure {
+    report {
+        version.set(allureVersion)
+    }
+    adapter { // отвечает за появление папочки build/allure-results
+        aspectjWeaver.set(true) //обработка аннотации @Step
+        frameworks {
+            junit5 { //название фреймворка
+                adapterVersion.set(allureVersion) //версия интеграции фреймворка и Allure
+            }
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(
+            "io.qameta.allure:allure-rest-assured:$allureVersion",
+            "org.assertj:assertj-core:$assertJVersion",
+            "com.fasterxml.jackson.core:jackson-databind:$jacksonDatabindVersion",
+            "org.junit.jupiter:junit-jupiter:$junitJupiterVersion",
+            "org.projectlombok:lombok:$lombokVersion",
+            "org.aeonbits.owner:owner:$ownerVersion",
+            "io.rest-assured:rest-assured:$restAssuredVersion",
+            "org.slf4j:slf4j-simple:$slf4jVersion",
+            "com.codeborne:selenide:$selenideVersion"
+    )
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task api_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("api")
+    }
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+    systemProperties(System.getProperties())
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
+}
