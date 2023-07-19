@@ -1,11 +1,10 @@
 package org.stepik.Auth;
 
-import org.stepik.models.LoginBodyModel;
+import org.stepik.models.LoginModel;
 
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
-import static org.stepik.helpers.CustomAllureListener.withCustomTemplates;
 
 public class Authorization {
 
@@ -13,7 +12,7 @@ public class Authorization {
 
     public static Map<String, String> getAuthCookies(String email, String password) {
 
-        LoginBodyModel loginBody = new LoginBodyModel(email, password);
+        LoginModel loginBody = new LoginModel(email, password);
 
         Map<String, String> req = given()
                 .when()

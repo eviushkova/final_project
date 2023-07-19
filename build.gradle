@@ -15,6 +15,7 @@ def allureVersion = "2.21.0",
     selenideVersion = "6.12.4"
 
 group "guru.qa"
+
 version "1.0-SNAPSHOT"
 
 allure {
