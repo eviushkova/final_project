@@ -31,7 +31,6 @@ public class Authorization {
                 .when()
                 .post("/api/users/login")
                 .then()
-                .log().all()
                 .statusCode(204)
                 .extract()
                 .cookies();
