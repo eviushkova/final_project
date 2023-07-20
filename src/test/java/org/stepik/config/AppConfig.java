@@ -14,6 +14,6 @@ public interface AppConfig extends Config {
     String getPassword();
 
     @Key("baseUrl")
+    @DefaultValue("https://stepik.org")
     String getBaseUrl();
-
 }
