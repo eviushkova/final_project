@@ -28,7 +28,6 @@ public class Authorization {
                         "X-Csrftoken", req.get(authCookieKey))
                 .body(loginBody)
                 .cookies(req)
-                .log().all()
                 .when()
                 .post("/api/users/login")
                 .then()
