@@ -15,18 +15,18 @@ import java.util.List;
 public class WishListModelResponse {
 
     @JsonProperty("wish-lists")
-    List<WishList> wishLists;
+    private List<WishList> wishLists;
 
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class WishList {
-        Long id;
-        Long user;
-        Long course;
+        private Long id;
+        private Long user;
+        private Long course;
         @JsonProperty("create_date")
-        String createDate;
-        String platform;
+        private String createDate;
+        private String platform;
     }
 }

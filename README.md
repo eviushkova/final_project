@@ -16,17 +16,17 @@
 
 ## :computer: Stack of technologies
 
-<p align="center">
-<img width="6%" title="Java" src="images/logo/Java.svg">
+<p align="left">
 <a href="https://rest-assured.io/"><img src="images/logo/RestAssured.svg" width="50" height="50"  alt="RestAssured" title="RestAssured"/></a>
-<img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
-<img width="6%" title="GitHub" src="images/logo/GitHub.svg">
-<img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
-<img width="6%" title="Gradle" src="images/logo/Gradle.svg">
-<img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
-<img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
-<img width="6%" title="Telegram" src="images/logo/Telegram.svg">
-<img width="6%" title="Allure TestOps" src="images/logo/AllureTestOps.svg">
+<a href="https://www.jetbrains.com/idea/"><img src="images/logo/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA" title="IntelliJ IDEA"/></a>
+<a href="https://www.java.com/"><img src="images/logo/Java.svg" width="50" height="50" alt="Java" title="Java"/></a>
+<a href="https://github.com/"><img src="images/logo/GitHub.svg" width="50" height="50" alt="Github" title="GitHub"/></a>
+<a href="https://junit.org/junit5/"><img src="images/logo/JUnit5.svg" width="50" height="50" alt="JUnit 5" title="JUnit 5"/></a>
+<a href="https://gradle.org/"><img src="images/logo/Gradle.svg" width="50" height="50" alt="Gradle" title="Gradle"/></a>
+<a href="https://github.com/allure-framework/allure2"><img src="images/logo/Allure_Report.svg" width="50" height="50" alt="Allure" title="Allure"/></a>
+<a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50" alt="Jenkins" title="Jenkins"/></a>
+<a href="https://web.telegram.org/"><img src="images/logo/Telegram.svg" width="50" height="50" alt="Telegram" title="Telegram"></a>
+<a href="https://qameta.io/"><img src="images/logo/AllureTestOps.svg" width="50" height="50" alt="AllureTestOps" title="AllureTestOps"></a>
 </p>
 
 ## :rocket: Running tests

@@ -8,5 +8,5 @@ import lombok.Data;
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AvatarModelRequest {
-    String avatar;
+    private String avatar;
 }

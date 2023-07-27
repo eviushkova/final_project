@@ -1,4 +1,4 @@
-package org.stepik.tests.api;
+package org.stepik.tests;
 
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;

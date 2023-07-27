@@ -8,6 +8,7 @@ import lombok.Data;
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class LoginModel {
-    String email;
-    String password;
+
+    private String email;
+    private String password;
 }

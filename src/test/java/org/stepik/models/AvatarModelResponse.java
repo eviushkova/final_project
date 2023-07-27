@@ -15,16 +15,15 @@ import java.util.List;
 public class AvatarModelResponse {
 
     @JsonProperty("profile-images")
-    List<ProfileImage> profileImages;
-
+    private List<ProfileImage> profileImages;
 
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class ProfileImage {
-        long id;
-        String avatar;
-        String cover;
+        private long id;
+        private String avatar;
+        private String cover;
     }
 }

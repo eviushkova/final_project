@@ -9,7 +9,6 @@ import static io.restassured.filter.log.LogDetail.BODY;
 import static io.restassured.filter.log.LogDetail.STATUS;
 import static org.stepik.helpers.CustomAllureListener.withCustomTemplates;
 
-
 public class Specs {
 
     public static RequestSpecification requestUploadAvatarSpec = with()
@@ -18,6 +17,7 @@ public class Specs {
             .log().body()
             .filter(withCustomTemplates())
             .contentType("multipart/form-data");
+
     public static ResponseSpecification responseSpecStatusCode200 = new ResponseSpecBuilder()
             .log(STATUS)
             .log(BODY)
@@ -71,6 +71,4 @@ public class Specs {
             .log(BODY)
             .expectStatusCode(204)
             .build();
-
-
 }

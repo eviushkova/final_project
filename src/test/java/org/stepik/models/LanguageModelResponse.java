@@ -13,6 +13,5 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class LanguageModelResponse {
 
-    List<Profile> profiles;
-
+    private List<Profile> profiles;
 }

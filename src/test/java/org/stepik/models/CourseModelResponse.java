@@ -13,13 +13,13 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CourseModelResponse {
 
-    List<EnrollmentResponse> enrollments;
+    private List<EnrollmentResponse> enrollments;
 
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class EnrollmentResponse {
-        Long id;
+        private Long id;
     }
 }

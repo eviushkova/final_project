@@ -14,18 +14,18 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CertificateModelResponse {
 
-    List<Certificate> certificates;
+    private List<Certificate> certificates;
 
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Certificate {
-        long id;
-        long user;
-        long course;
-        String url;
+        private long id;
+        private long user;
+        private long course;
+        private String url;
         @JsonProperty("course_title")
-        String courseTitle;
+        private String courseTitle;
     }
 }

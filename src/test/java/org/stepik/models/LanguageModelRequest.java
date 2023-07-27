@@ -10,7 +10,7 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class LanguageModelRequest {
 
-    Profile profile;
+    private Profile profile;
 
     public enum Language {
         PORTUGUESE("pt"),

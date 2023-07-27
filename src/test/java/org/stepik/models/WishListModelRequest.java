@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class WishListModelRequest {
 
-    WishList wishList;
+    private WishList wishList;
 
     @Data
     @AllArgsConstructor
@@ -24,10 +24,10 @@ public class WishListModelRequest {
             this.course = course;
         }
 
-        String course;
+        private String course;
         @JsonProperty("create_date")
-        String createDate;
-        String platform = "web";
-        long user;
+        private String createDate;
+        private String platform = "web";
+        private long user;
     }
 }

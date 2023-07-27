@@ -10,13 +10,13 @@ import lombok.NoArgsConstructor;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CourseModelRequest {
 
-    Enrollment enrollment;
+    private Enrollment enrollment;
 
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Enrollment {
-        String course;
+        private String course;
     }
 }
