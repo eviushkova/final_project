@@ -1,4 +1,4 @@
-package org.stepik.Auth;
+package org.stepik.auth;
 
 import org.stepik.models.LoginModel;
 

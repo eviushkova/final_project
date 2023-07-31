@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.stepik.Auth.Authorization;
+import org.stepik.auth.Authorization;
 import org.stepik.models.*;
 import org.stepik.models.LanguageModelRequest.Language;
 import org.stepik.specs.TestBase;
@@ -17,7 +17,7 @@ import java.util.stream.Stream;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.stepik.Auth.Authorization.authCookieKey;
+import static org.stepik.auth.Authorization.authCookieKey;
 import static org.stepik.models.LanguageModelRequest.Language.*;
 import static org.stepik.specs.Specs.*;
 

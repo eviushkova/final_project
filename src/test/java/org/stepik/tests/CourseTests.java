@@ -3,7 +3,7 @@ package org.stepik.tests;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.stepik.Auth.Authorization;
+import org.stepik.auth.Authorization;
 import org.stepik.models.CourseModelRequest;
 import org.stepik.models.CourseModelResponse;
 import org.stepik.specs.TestBase;
@@ -11,7 +11,7 @@ import org.stepik.specs.TestBase;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.stepik.Auth.Authorization.authCookieKey;
+import static org.stepik.auth.Authorization.authCookieKey;
 import static org.stepik.specs.Specs.*;
 
 public class CourseTests extends TestBase {
